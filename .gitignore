@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!docker-compose.yml
+!Dockerfile
+!Gemfile
+!Gemfile.lock
+!README.md
