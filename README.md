@@ -1,11 +1,7 @@
-# Rails Docker Starter
+# Docker Starters
 
 IN PROGRESS - USE AT YOUR OWN RISK
 
-docker-compose run web rails new . --force --database=postgresql
+A collection of Docker files and scripts to make it easy to set up local development environments for various frameworks.
 
-docker-compose build
-
-docker-compose up
-
-docker-compose run web bin/rails db:create
+See the README files in each subdirectory for framework specific instructions.
