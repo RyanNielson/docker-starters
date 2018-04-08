@@ -1,0 +1,18 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    volumes:
+      - /var/lib/postgresql/data
+  web:
+    build: .
+    command: mix do ecto.migrate, phoenix.server
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "4000:4000"
+    environment:
+      - MIX_ENV=dev
+    depends_on:
+      - db
